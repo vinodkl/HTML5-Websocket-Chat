@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>HTML5 - Shoout up!!!</title>
+        <script src="./js/chat.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" href="./css/chat.css" type="text/css" media="" title="" charset="utf-8">
+</head>
+<body>
+        <!-- Login box -->
+        <div id="login-box" style="display:;">
+                <label for="your_nick">Your nick :</label><input type="text" name="your_nick" value="" id="your_nick">
+                <br><input type="button" name="nick_set" value="Set nick" id="nick_set" onclick="doClick()">
+        </div>
+        
+        <!--IRC chat box -->
+        <div id="irc-chat" style="display:none;">
+                <div id="irc-msgs">
+                        <div id="irc">
+                        <ul id="irc-logs">
+ 
+                        </ul>       
+                        </div>
+                        <div id="user-msg">
+                                <input type="text" name="user_msg" value="" id="user_msg">
+                                <input type="button" name="send_msg" value="Send" id="send_msg" onclick="sendMsg()">
+                        </div>
+                </div>
+                <div id="irc-users">
+                       <h2>Online Users</h2> 
+                       <ul id="user-list">
+                               
+                       </ul>
+                </div>
+        </div>
+        
+        <!--Logger box -->
+        <div id="logs" style="display:none;">
+                
+        </div>
+</body>
+</html>
